@@ -14,65 +14,58 @@
         <link rel="stylesheet" href="style.css">
     </head>
 <body>
-    <nav class="navbar navbar-expand-lg" id="menu_top">
+    <nav class="navbar navbar-expand-lg navbar-custom">
         <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand ml-5 ms-1" id="logo_text" href="#">
-            <img src="logo1.png" alt="logo" class="img-fluid" width="70px">    
-            NavBar
+            <img src="/images/LOGO.png" alt="logo" class="img-fluid" width="70px">
         </a>
         <div class="collapse navbar-collapse ms-12" id="navbarTogglerDemo02">
           <ul class="navbar-nav mr-auto mt-2 mt-md-0 mx-auto">
             <li class="nav-item">
-                <a class="nav-link d-flex align-items-center" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
-                        <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z"/>
-                    </svg>
-                    <span class="medium ml-2 mr-sm-5">Ostatnie projekty</span>
+                <a class="nav-link d-flex align-items-center menu-option" href="#">
+                    <img src="/images/arrow.svg" class="rotate-icon" width="38px" height="38px">
+                    <span class="medium ml-2 mr-sm-5">O firmie</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link d-flex align-items-center" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
-                        <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z"/>
-                    </svg>
+                <a class="nav-link d-flex align-items-center menu-option" href="#">
+                    <img src="/images/arrow.svg" class="rotate-icon" width="38px" height="38px">
+                    <span class="medium ml-2 mr-sm-5">Projekty</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link d-flex align-items-center menu-option" href="#">
+                    <img src="/images/arrow.svg" class="rotate-icon" width="38px" height="38px">
+                    <span class="medium ml-2 mr-sm-5">Realizacje</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link d-flex align-items-center menu-option" href="#">
+                    <img src="/images/arrow.svg" class="rotate-icon" width="38px" height="38px">
                     <span class="medium ml-2 mr-sm-5">Kontakt</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link d-flex align-items-center" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
-                        <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z"/>
-                    </svg>
-                    <span class="medium ml-2 mr-sm-5">Galeria</span>
                 </a>
             </li>
           </ul>
         </div>
     </nav>
 
-    <div class="container-fluid text-center mt-3">
+    <div class="container-fluid">
         <div class="row h-100">
-            <div class="col my-auto" id="side_panel">
-                <h1 id="big_logo1">Twój ulubiony kolor w naszym wykonaniu</h1>
-                <model-viewer interpolation-decay="200" id="alfa_model" src="/source/lambo.glb" alt="A 3D model of a shishkebab">
-                    <button class="view-button" slot="hotspot-0" data-position="-0.0569m 0.0969m -0.1398m" data-normal="-0.5829775m 0.2863482m -0.7603565m" data-orbit="-50.94862deg 84.56856deg 0.06545582m">
-                        The Fighters
-                      </button>
-                </model-viewer>
-                <script src="obracanie.js"></script>
-            </div>
+            
+            <!-- <div class="col my-auto text-center">
+                
+                <div class="m-5">
+                    <h1 id="big_logo1">Twój ulubiony kolor w naszym wykonaniu</h1>
+                </div>
+                
+                <div id="css_model_fix">
+                    <model-viewer interpolation-decay="200" ar ar-scale="auto" id="alfa_model" src="/source/lambo.glb" alt="A 3D model of a shishkebab"></model-viewer>
+                    <script src="obracanie.js"></script>
+                </div>
+            </div> -->
         </div>
-            <div class="col-sm">
-
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid vh-100">
-        <!-- <input type="color" id="colorPicker" onchange="handleColorChange(event)">
-        <h5>adgadga</h5> -->
     </div>
     <script width="100%" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>

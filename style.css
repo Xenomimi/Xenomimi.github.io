@@ -1,55 +1,25 @@
-#menu {
-    background: rgb(55, 59, 77);
-}
 
 body {
     background-color: #161617ff;
     color: #cececeff;
 }
 
-ul li {
+.nav-link {
     color: white;
 }
-model-viewer {
-    height: 600px;
-    width: 100%;
-    z-index: 3;
-}
 
-.view-button {
-    background: #fff;
-    border-radius: 20px;
-    border: none;
-    box-sizing: border-box;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-    color: rgba(0, 0, 0, 0.8);
-    display: block;
-    font-family: Futura, Helvetica Neue, sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    max-width: 128px;
-    overflow-wrap: break-word;
-    padding: 0.5em 1em;
-    position: absolute;
-    width: max-content;
-    height: max-content;
-    transform: translate3d(-50%, -50%, 0);
+/* Obrót strzałkami w menu */
+.rotate-icon {
+    transition: transform 0.3s ease-out;
 }
-
-#big_logo1 {
-    font-size: 5em;
+.menu-option:hover .rotate-icon {
+    transform: rotate(180deg);
 }
 
 .navbar-brand
 {
     font-size: 25px;
     font-weight: bold;
-}
-
-#menu_top {
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
-    background: rgba(29,29,31,.72);
 }
 
 .custom-toggler .navbar-toggler-icon {
@@ -60,3 +30,30 @@ model-viewer {
     border-color: rgb(111, 111, 111);
     outline: none;
 } 
+
+
+
+
+/* #big_logo1 {
+    font-size: 5em;
+    background: linear-gradient(180deg, rgba(0,86,255,0.871608018207283) 0%, rgba(120,182,255,1) 54%, rgba(255,255,255,1) 100%);
+    background-size: 130%;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+/* model-viewer {
+    width: 100vh;
+    height: 80vh;
+} */
+
+/* #css_model_fix {
+    object-fit: contain;
+    height: 80vh;
+    width:auto;
+    display: flex;
+    justify-content: center;
+} */
