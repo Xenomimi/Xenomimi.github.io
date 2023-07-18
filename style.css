@@ -193,9 +193,14 @@ main {
     border-radius: 25px;
     height: 250px;
     display: flex;
-    align-items: center; 
+    align-items: center;
+    border-radius: 50px;
+    background: url(https://slator.com/assets/2021/05/Product-Labeling-Services-by-K-International.jpg), lightgray 50% / cover no-repeat;
+    background-size: cover;
+    box-shadow: 0px 4px 50px 30px rgba(0, 0, 0, 0.25);
+    
 }
-  
+
 .Wizualizacja-2D { 
     grid-area: Wizualizacja-2D; 
     background-color: #FFF;
@@ -207,6 +212,10 @@ main {
     background: url(https://www.esri.com/content/dam/esrisites/en-us/arcgis/location-services/arcgis-platfrom-update/assets/data-visualization/2d-visualization-50-50-split.jpg), lightgray 50% / cover no-repeat;
     box-shadow: 0px 4px 50px 30px rgba(0, 0, 0, 0.25);
 }
+.Wizualizacja-2D:hover {
+    transition: 1s, cubic-bezier(1, 0, 0, 1);
+    opacity: 1;
+}
   
 .Bannery { 
     grid-area: Bannery; 
@@ -214,7 +223,12 @@ main {
     border-radius: 25px;
     height: 250px;
     display: flex;
-    align-items: center; 
+    align-items: center;
+        border-radius: 50px;
+    background: url(https://www.dlgsc.wa.gov.au/images/default-source/default-album/stgeorgestcemarnierichardson-3.jpg?sfvrsn=dcd8554_0), lightgray 50% / cover no-repeat;
+    background-size: cover;
+    background-position: 30px;
+    box-shadow: 0px 4px 50px 30px rgba(0, 0, 0, 0.25); 
 }
   
 .Ilustracje { 
@@ -223,7 +237,11 @@ main {
     border-radius: 25px;
     height: 250px;
     display: flex;
-    align-items: center; 
+    align-items: center;
+        border-radius: 50px;
+    background: url(https://images.pexels.com/photos/1418595/pexels-photo-1418595.jpeg?cs=srgb&dl=pexels-steve-johnson-1418595.jpg&fm=jpg), lightgray 50% / cover no-repeat;
+    background-size: cover;
+    box-shadow: 0px 4px 50px 30px rgba(0, 0, 0, 0.25); 
 }
   
 .Podzial-na-2 {  
@@ -243,7 +261,11 @@ main {
     margin-right: 25px;
     height: 250px;
     display: flex;
-    align-items: center; 
+    align-items: center;
+        border-radius: 50px;
+    background: url(https://mir-s3-cdn-cf.behance.net/projects/404/e82fcb135276317.Y3JvcCwyNDAwLDE4NzcsMCw1NTg.jpg), lightgray 50% / cover no-repeat;
+    background-size: cover;
+    box-shadow: 0px 4px 50px 30px rgba(0, 0, 0, 0.25); 
 }
   
 .Szaty-graficzne { 
@@ -252,7 +274,11 @@ main {
     margin-left: 25px;
     height: 250px;
     display: flex;
-    align-items: center; 
+    align-items: center;
+        border-radius: 50px;
+    background: url(https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/61a77a4a6e46e5363fbbde1d_purple-pink.png), lightgray 50% / cover no-repeat;
+    background-size: cover;
+    box-shadow: 0px 4px 50px 30px rgba(0, 0, 0, 0.25); 
 }
 .text_in_card {
     margin: 25px
