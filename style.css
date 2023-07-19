@@ -144,43 +144,79 @@ header {
 }
 
 /* Slider kartek */
-.splide {
-    width: 1200px;
-}
-
-.splide__slide {
-    flex: 0 0 auto;
-    width: calc(100% / 4); /* Dzieli równo szerokość na 3 slajdy */
-}
-
-@media (max-width: 768px) {
-    .splide__slide {
-        width: calc(100% / 2); /* Dzieli równo szerokość na 2 slajdy na urządzeniach o szerokości do 768px */
-    }
-}
-
-@media (max-width: 576px) {
-    .splide__slide {
-        width: 100%; /* Pełna szerokość slajdu na urządzeniach o szerokości do 576px */
-    }
-}
-
 main {
-    margin-top: 50px;
+    width: 80%;
 }
+
+.swiper-container {
+    position: relative; /* Dodajmy stosunkową pozycję dla kontenera */
+    width: 100%;
+    max-width: 1200px; /* Ustaw szerokość kontenera */
+    margin: 0 auto; /* Centralizuj slider na stronie */
+    overflow: hidden;
+  }
+
+  /* Dodajmy style dla pojedynczych kart */
+  .swiper-slide {
+    background-color: #353a3f;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    height: fit-content;
+    width: 100px;
+  }
+
+  /* Dodajmy style dla paginacji */
+  .swiper-pagination {
+    position: relative;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+  }
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #f2a37d;
+    opacity: 0.7;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #d8562a;
+  }
+
+
+  /* Dodajmy style dla przycisków nawigacyjnych */
+  .swiper-button-next, .swiper-button-prev {
+    width: 50px;
+    height: 50px;
+    color: #d8562a;
+    cursor: pointer;
+    z-index: 10; /* Ustawiamy wysoki index z powodu stosunkowej pozycji */
+  }
+
+  .card_img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+  .cos_tam {
+    padding: 20px;
+  }
+
+
 
 /* Karty z hoverem */
-
 .wiadro {  
     display: grid;
     width: 80%;
+    max-width: 1200px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
     gap: 50px;
     grid-auto-flow: row;
-    padding: 20px;
     grid-template-areas:
       "Wizualizacja-2D Etykiety-produktów Etykiety-produktów"
       "Bannery Bannery Ilustracje"
@@ -195,7 +231,7 @@ main {
     display: flex;
     align-items: center;
     border-radius: 50px;
-    background: url(https://slator.com/assets/2021/05/Product-Labeling-Services-by-K-International.jpg), lightgray 50% / cover no-repeat;
+    background: url(/images/etykiety\ produktów.webp), lightgray 50% / cover no-repeat;
     background-size: cover;
     box-shadow: 0px 4px 50px 30px rgba(0, 0, 0, 0.25);
     
@@ -209,7 +245,7 @@ main {
     align-items: center;
     border-radius: 50px;
     opacity: 0.25;
-    background: url(https://www.esri.com/content/dam/esrisites/en-us/arcgis/location-services/arcgis-platfrom-update/assets/data-visualization/2d-visualization-50-50-split.jpg), lightgray 50% / cover no-repeat;
+    background: url(/images/2d.jpg), lightgray 50% / cover no-repeat;
     box-shadow: 0px 4px 50px 30px rgba(0, 0, 0, 0.25);
 }
 .Wizualizacja-2D:hover {
@@ -225,7 +261,7 @@ main {
     display: flex;
     align-items: center;
         border-radius: 50px;
-    background: url(https://www.dlgsc.wa.gov.au/images/default-source/default-album/stgeorgestcemarnierichardson-3.jpg?sfvrsn=dcd8554_0), lightgray 50% / cover no-repeat;
+    background: url(/images/bannery.jpg), lightgray 50% / cover no-repeat;
     background-size: cover;
     background-position: 30px;
     box-shadow: 0px 4px 50px 30px rgba(0, 0, 0, 0.25); 
@@ -239,7 +275,7 @@ main {
     display: flex;
     align-items: center;
         border-radius: 50px;
-    background: url(https://images.pexels.com/photos/1418595/pexels-photo-1418595.jpeg?cs=srgb&dl=pexels-steve-johnson-1418595.jpg&fm=jpg), lightgray 50% / cover no-repeat;
+    background: url(/images/ilustracje.jpg), lightgray 50% / cover no-repeat;
     background-size: cover;
     box-shadow: 0px 4px 50px 30px rgba(0, 0, 0, 0.25); 
 }
@@ -263,7 +299,7 @@ main {
     display: flex;
     align-items: center;
         border-radius: 50px;
-    background: url(https://mir-s3-cdn-cf.behance.net/projects/404/e82fcb135276317.Y3JvcCwyNDAwLDE4NzcsMCw1NTg.jpg), lightgray 50% / cover no-repeat;
+    background: url(/images/merch.jpg), lightgray 50% / cover no-repeat;
     background-size: cover;
     box-shadow: 0px 4px 50px 30px rgba(0, 0, 0, 0.25); 
 }
@@ -276,10 +312,11 @@ main {
     display: flex;
     align-items: center;
         border-radius: 50px;
-    background: url(https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/61a77a4a6e46e5363fbbde1d_purple-pink.png), lightgray 50% / cover no-repeat;
+    background: url(/images/szaty.png), lightgray 50% / cover no-repeat;
     background-size: cover;
     box-shadow: 0px 4px 50px 30px rgba(0, 0, 0, 0.25); 
 }
 .text_in_card {
-    margin: 25px
+    margin: 25px;
+    font-size: 2em;
 }
