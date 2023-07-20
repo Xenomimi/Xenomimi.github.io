@@ -320,3 +320,99 @@ main {
     margin: 25px;
     font-size: 2em;
 }
+/* Formularz kontaktowy */
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+    width: 80%;
+    max-width: 1200px;
+}
+    
+.div1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+    display: flex;
+    flex-direction: column;
+    padding: 0px 50px 0px 50px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+.div3 { 
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    justify-content: center;
+}
+.div4 { 
+    grid-area: 2 / 2 / 3 / 3; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#map {
+    border-radius: 20px;
+    filter: grayscale(100%) invert(92%);
+}
+.k_item {
+    display: inline-flex
+}
+.k_item_img {
+    padding: 10px;
+    margin: 5px 5px 0px 5px;
+}
+.div1 > form {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#przycisk_wyslij {
+    width: 80%;
+    border-radius: 50px;
+    background: #EA4A11;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    outline: none;
+    border: 0;
+    height: 55px;
+}
+
+textarea {
+    resize: none;
+    background-color: transparent; /* Brak tła */
+    border: none; /* Brak obramowania */
+    border-bottom: 1px solid #cecece; /* Kreska pod inputem */
+    outline: none; /* Usunięcie domyślnego podświetlenia na focusie */
+    padding: 5px 0; /* Dodatkowy padding górny i dolny, aby lepiej wyglądało */
+    color: #cecece; /* Kolor tekstu w input */
+    font-size: 16px;
+    overflow: hidden;
+}
+textarea::placeholder {
+    color: #cecece; /* Kolor placeholdera */
+    opacity: 0.5;
+}
+
+input {
+    background-color: transparent; /* Brak tła */
+    border: none; /* Brak obramowania */
+    border-bottom: 1px solid #cecece; /* Kreska pod inputem */
+    outline: none; /* Usunięcie domyślnego podświetlenia na focusie */
+    padding: 5px 0; /* Dodatkowy padding górny i dolny, aby lepiej wyglądało */
+    color: #cecece; /* Kolor tekstu w input */
+    font-size: 16px; /* Rozmiar tekstu w input */
+    padding: 10px 0px 10px 0px;
+    margin-bottom: 20px;
+  }
+  
+  /* Styl dla placeholdera */
+input::placeholder {
+    color: #cecece; /* Kolor placeholdera */
+    opacity: 0.5; /* Przezroczystość placeholdera */
+}

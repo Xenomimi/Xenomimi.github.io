@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!-- Swiper dla card carousel -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+        <!-- Mapy Google -->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -266,8 +268,68 @@
           </div>
         </div>
     </div>
+    
     <div id="text-ostatnio-dodane">
         <h1>Masz pomysł na swoją stronę? Skontaktuj się z nami!</h1>
+    </div>
+
+    <div class="parent">
+        <div class="div1">
+            <form action="">
+              <input type="text" name="imie" id="imie" placeholder="Imię">
+              <input type="text" name="nazwisko" id="nazwisko" placeholder="Nazwisko">
+              <input type="text" name="telefon" id="telefon" placeholder="Telefon">
+              <input type="text" name="tytul" id="tytul" placeholder="Tytuł">
+              <textarea name="wiadomosc" id="wiadomosc" cols="23" rows="3" placeholder="Wiadomość"></textarea>
+            </form>
+          </div>
+        <div class="div2">
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.3703178815285!2d21.995643975852957!3d50.04189381669751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473cfb018c3f4fbd%3A0x5033f39cd685a056!2sGaleria%20Rzesz%C3%B3w!5e0!3m2!1spl!2spl!4v1689852604812!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="div3">
+            <input type="submit" id="przycisk_wyslij" value="Wyślij">
+        </div>
+        <div class="div4">
+            <div class="k_item">
+                <div class="k_item_img">
+                    <img src="images/k_telefon.svg"> 
+                </div>
+                <div class="k_item_text">
+                    <div class="k_item_text_big">
+                        <h5>Telefon</h5>
+                    </div>
+                    <div class="k_item_text_small">
+                        <p>+48 888 888 888</p>
+                    </div>
+                </div>
+            </div>
+            <div class="k_item">
+                <div class="k_item_img">
+                    <img src="images/k_email.svg"> 
+                </div>
+                <div class="k_item_text">
+                    <div class="k_item_text_big">
+                        <h5>E-mail</h5>
+                    </div>
+                    <div class="k_item_text_small">
+                        <p>car.rev@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="k_item">
+                <div class="k_item_img">
+                    <img src="images/k_facebook.svg"> 
+                </div>
+                <div class="k_item_text">
+                    <div class="k_item_text_big">
+                        <h5>Facebook</h5>
+                    </div>
+                    <div class="k_item_text_small">
+                        <p>facebook.com/CarRev</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </div> 
